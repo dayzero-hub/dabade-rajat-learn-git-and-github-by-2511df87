@@ -6,3 +6,9 @@ I'm learning Git and GitHub by working through this project's exercises.
 
 - How to open and update pull requests
 - How draft pull requests let you keep pushing before review
+
+## Tools I'm using
+
+- Editor: VS Code
+- Terminal: Terminal.app
+- Operating system: macOS
