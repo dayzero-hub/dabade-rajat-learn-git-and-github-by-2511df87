@@ -6,5 +6,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Ticket 4 asks you to add two more entries here, with a comment above each
-# saying why. Read the ones above first: each says WHY, not just WHAT.
+# Dependencies get reinstalled from the lockfile, not copied — committing
+# them bloats the repo with thousands of files nobody hand-edits
+node_modules/
+
+# Holds real credentials (API keys, tokens) once you copy .env.example into
+# it — committing this leaks secrets into history, not just the file
+.env

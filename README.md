@@ -50,6 +50,15 @@ When he asks for a change, push another commit to the **same branch**. Do not op
 pull request — a pull request follows a branch, so your new commit appears in it and the
 review runs again.
 
+## What .gitignore is for
+
+`.gitignore` tells git which files to never track, so machine-generated stuff (installed
+dependencies, build output), editor and OS clutter, and anything with a password, key, or
+token never gets staged in the first place. Deleting a secret from a later commit does not
+undo this: the commit that added it is still in the repo's history, so anyone who clones it
+or looks at an old commit can still read the key. If a secret is ever committed, the fix is
+to treat it as leaked — rotate/revoke it — not to delete the file and commit again.
+
 ## The one rule
 
 **Never commit directly to `main`.** If you do it by accident, say so in Slack. It is a
